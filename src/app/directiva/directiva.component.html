@@ -1,0 +1,18 @@
+<p>directiva works!</p>
+
+
+<div class="card text-left">
+<div class="d-flex justify-content-between">
+  <div class="card-header">
+    Listado de cursos
+  </div>
+  <button type="button" (click)="setHabilitar()" class="btn btn-primary">
+    {{ habilitar == true ? 'Ocultar' : 'Mostrar'}}
+  </button>
+</div>
+  <ul class="list-group" *ngIf="habilitar">
+    <li class="list-group-item" *ngFor="let curso of listaCurso">
+      <p>{{ curso }}</p>
+    </li>
+  </ul>
+</div>

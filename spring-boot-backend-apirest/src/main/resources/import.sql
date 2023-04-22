@@ -1,0 +1,10 @@
+INSERT INTO myDatabase.clientes (id, apellido, create_at, email, nombre) VALUES (1, 'Pérez', '2022-01-05 10:15:00', 'perez@gmail.com', 'Juan');
+INSERT INTO myDatabase.clientes (id, apellido, create_at, email, nombre) VALUES (2, 'González', '2022-01-05 11:30:00', 'gonzalez@hotmail.com', 'María');
+INSERT INTO myDatabase.clientes (id, apellido, create_at, email, nombre) VALUES (3, 'Rodríguez', '2022-01-05 12:45:00', 'rodriguez@yahoo.com', 'Pedro');
+INSERT INTO myDatabase.clientes (id, apellido, create_at, email, nombre) VALUES (4, 'García', '2022-01-05 14:00:00', 'garcia@gmail.com', 'Ana');
+INSERT INTO myDatabase.clientes (id, apellido, create_at, email, nombre) VALUES (5, 'Martínez', '2022-01-05 15:15:00', 'martinez@hotmail.com', 'Sofía');
+INSERT INTO myDatabase.clientes (id, apellido, create_at, email, nombre) VALUES (6, 'López', '2022-01-05 16:30:00', 'lopez@yahoo.com', 'Miguel');
+INSERT INTO myDatabase.clientes (id, apellido, create_at, email, nombre) VALUES (7, 'Hernández', '2022-01-05 17:45:00', 'hernandez@gmail.com', 'Laura');
+INSERT INTO myDatabase.clientes (id, apellido, create_at, email, nombre) VALUES (8, 'Díaz', '2022-01-05 19:00:00', 'diaz@hotmail.com', 'Javier');
+INSERT INTO myDatabase.clientes (id, apellido, create_at, email, nombre) VALUES (9, 'Torres', '2022-01-05 20:15:00', 'torres@yahoo.com', 'Carolina');
+INSERT INTO myDatabase.clientes (id, apellido, create_at, email, nombre) VALUES (10, 'Sánchez', '2022-01-05 21:30:00', 'sanchez@gmail.com', 'David');
