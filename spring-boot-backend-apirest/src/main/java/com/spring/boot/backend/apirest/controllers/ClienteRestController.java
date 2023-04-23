@@ -4,6 +4,7 @@ import com.spring.boot.backend.apirest.models.entity.Cliente;
 import com.spring.boot.backend.apirest.models.services.IClienteServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
@@ -19,11 +20,12 @@ public class ClienteRestController {
 
     @GetMapping("/clientes")
     public List<Cliente> index(){
-        return iclienteServices.findAll();
+      return iclienteServices.findAll();
     }
 
     @GetMapping("/clientes/{id}")
-    public Cliente show(@PathVariable long id){
+    public ResponseEntity<Cliente> show(@PathVariable long id){
+
       return iclienteServices.findById(id);
     }
 
