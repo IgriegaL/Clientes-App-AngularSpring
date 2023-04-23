@@ -9,4 +9,10 @@ public interface IClienteServices {
     // Le damos los metodos para implementar los de la
     public List<Cliente> findAll();
 
+    public Cliente findById(long id);
+
+    public Cliente save(Cliente cliente);
+
+    public void delete(long id);
+
 }
