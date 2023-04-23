@@ -7,33 +7,15 @@ import { ClienteService } from './cliente.service';
   selector: 'app-clientes',
   templateUrl: './clientes.component.html'
 })
-export class ClientesComponent {
+export class ClientesComponent implements OnInit {
 
-  clientes:Cliente[];
+  clientes: Cliente[];
 
-  constructor(
-    private clienteService: ClienteService
-    ){
+  constructor(private clienteService: ClienteService) { }
 
-  }
-
-  ngOnInit(){
-    // Iniciamos los clientes
+  ngOnInit() {
     this.clienteService.getClientes().subscribe(
-      /*
-      llamamos a través de una función anonima a los clientes que nos entrega getClientes
-      Esta función anonima se encarga de asignar el valor al cliente component
-      */
-      clientes => this.clientes = clientes
-      /*
-      Esta función anónima es lo mismo que:
-      function (clientes){
-        this.clientes = clientes
-      }
-
-      */
-
+       clientes => this.clientes = clientes
     );
   }
-
 }

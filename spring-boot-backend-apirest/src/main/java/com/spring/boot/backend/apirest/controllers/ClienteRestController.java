@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 /* Con crossOrigin definimos lo que permitimos y los metodos tb */
-@CrossOrigin(origins = {"http://localhost:8080"})
+@CrossOrigin(origins = {"http://localhost:4200"})
 @RestController // Como es un Api rest, usamos RestController
 @RequestMapping("/api")
 public class ClienteRestController {

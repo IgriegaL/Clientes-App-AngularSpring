@@ -26,8 +26,8 @@ const routes: Routes = [
     ClientesComponent
   ],
   imports: [
-    HttpClientModule,
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
